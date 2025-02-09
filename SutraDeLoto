@@ -1,0 +1,156 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sutra de Loto - Arte Espiritual en Remeras</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+  <header>
+    <div class="brand-logo">
+      <img src="https://imgur.com/vLbeWGw.jpg" alt="Sutra de Loto Logo" class="header-logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <a href="#cart" id="cart-icon">
+            🛒 <span id="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="main-logo">
+        <img src="https://imgur.com/vLbeWGw.jpg" alt="Sutra de Loto Logo" class="hero-logo">
+      </div>
+      <div class="lotus-bg">
+        <svg>
+          <defs>
+            <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#b8860b" />
+              <stop offset="50%" style="stop-color:#ffd700" />
+              <stop offset="100%" style="stop-color:#b8860b" />
+            </linearGradient>
+          </defs>
+          <path d="M50 0C37 20 10 40 10 60C10 80 30 90 50 90C70 90 90 80 90 60C90 40 63 20 50 0Z"/>
+        </svg>
+      </div>
+      <h1>Sutra de Loto</h1>
+      <p>Arte inspirado en la conexión espiritual a través del Daimoku</p>
+      <div class="mantra">Nam-myoho-renge-kyo</div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>Nuestra Esencia</h2>
+      <div class="about-content">
+        <p>Sutra de Loto nace de la profunda conexión con el Daimoku, transformando la energía espiritual en expresiones artísticas únicas que llevas contigo.</p>
+        
+        <div class="daimoku-explanation">
+          <h3>El Significado del Daimoku</h3>
+          <div class="daimoku-terms">
+            <div class="daimoku-term">
+              <h4>Nam</h4>
+              <p>Devoción y dedicación</p>
+            </div>
+            <div class="daimoku-term">
+              <h4>Myoho</h4>
+              <p>Ley mística</p>
+            </div>
+            <div class="daimoku-term">
+              <h4>Renge</h4>
+              <p>Flor de loto - causa y efecto</p>
+            </div>
+            <div class="daimoku-term">
+              <h4>Kyo</h4>
+              <p>Sutra o enseñanza</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="productos">
+      <h2>Nuestras Creaciones</h2>
+      <div class="productos-grid">
+        <div class="producto" data-id="1">
+          <div class="producto-imagen">
+            <img src="https://imgur.com/DO9DbAE.jpg" alt="Remera Nam" class="product-img">
+          </div>
+          <h3>Remera Nam</h3>
+          <p>Diseño inspirado en la devoción y dedicación</p>
+          <p class="precio">$35.00</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        
+        <div class="producto" data-id="2">
+          <div class="producto-imagen">
+            <img src="https://imgur.com/W6PMvoH.jpg" alt="Remera Renge" class="product-img">
+          </div>
+          <h3>Remera Renge</h3>
+          <p>Simbolismo de la flor de loto</p>
+          <p class="precio">$35.00</p>
+          <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+
+        <div class="producto" data-id="3">
+          <div class="producto-imagen">
+            <svg class="tshirt-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M16,21H8A1,1 0 0,1 7,20V12.07L5.7,13.12C5.31,13.5 4.68,13.5 4.29,13.12L1.46,10.29C1.07,9.9 1.07,9.27 1.46,8.88L7.34,3H9C9,4.1 10.34,5 12,5C13.66,5 15,4.1 15,3H16.66L22.54,8.88C22.93,9.27 22.93,9.9 22.54,10.29L19.71,13.12C19.32,13.5 18.69,13.5 18.3,13.12L17,12.07V20A1,1 0 0,1 16,21M20.42,9.58L16.11,5.28C15.8,5.63 15.43,5.94 15,6.2C14.16,6.7 13.13,7 12,7C10.3,7 8.79,6.32 7.89,5.28L3.58,9.58L5,11L8,9H9V19H15V9H16L19,11L20.42,9.58Z" />
+            </svg>
+            <div class="coming-soon-badge">Próximamente</div>
+          </div>
+          <h3>Remera Kyo</h3>
+          <p>Arte inspirado en las enseñanzas</p>
+          <p class="precio">$35.00</p>
+          <button class="add-to-cart" disabled>Próximamente</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Carrito de Compras</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">
+          <strong>Total: $<span id="total-amount">0.00</span></strong>
+        </div>
+        <button id="checkout">Finalizar Compra</button>
+      </div>
+    </div>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="nombre" required placeholder="Nombre y Apellido / Apodo">
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" required placeholder="Tu Email">
+        </div>
+        <div class="form-group">
+          <textarea id="mensaje" required placeholder="Mensaje"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2024 Sutra de Loto. Transformando la espiritualidad en arte. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
